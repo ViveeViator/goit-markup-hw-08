@@ -1,15 +1,23 @@
 .client__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.66;
+  font-size: 28px;
+  line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
   margin-bottom: 50px;
+  @media screen and (min-width:1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    }
 }
 .client__list {
-  display: flex;
+  list-style: none;
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .client__link {
@@ -39,4 +47,16 @@
 
 .client__item:not(:last-child) {
   margin-right: 30px;
+}
+.client__item {
+  @media screen and (min-width:480px) {
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width:768px) {
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width:1200px) {
+    width: calc(100% / 6 - 30px);
+  }
+  
 }
