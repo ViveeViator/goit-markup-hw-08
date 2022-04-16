@@ -1,12 +1,18 @@
 .filter__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     margin-bottom: 50px;
+    @media screen and (min-width:768px) {
+      justify-content: center;
+    }
     & li:not(:last-child) {
       margin-right: 8px;
     }
   }
-  
+  .filter__item {
+    margin-bottom: 15px;
+  }
   .filter__btn {
     font-family: inherit;
     font-weight: 500;
