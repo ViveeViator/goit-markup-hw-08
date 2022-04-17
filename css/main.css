@@ -262,7 +262,7 @@ img {
   margin-right: auto;
   background-color: var(--first-title-color);
   text-align: center;
-  padding: 200px 0px;
+  padding: 118px 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -270,17 +270,31 @@ img {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
+  }
+}
+
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
@@ -315,6 +329,10 @@ img {
   }
 }
 
+.about__list {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .about__list {
     display: -webkit-box;
@@ -324,6 +342,10 @@ img {
         flex-wrap: wrap;
     margin-left: -30px;
   }
+}
+
+.about__item {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -424,7 +446,7 @@ img {
 .team__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
