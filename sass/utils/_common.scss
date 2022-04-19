@@ -37,13 +37,37 @@
     width: 1200px;
   }
 }
+.mob-container {
+  width: 100vw;
+  height: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width:480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width:768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 1200px;
+  }
+}
 .logo {
   font-family: 'Raleway';
+  font-style: normal;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+  @media screen and (min-width:1200px) {
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  }
 }
 .current {
   color: var(--accent-color);

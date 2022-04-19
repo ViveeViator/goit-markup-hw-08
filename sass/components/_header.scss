@@ -1,8 +1,13 @@
 .header {
   border-bottom: 1px solid #ececec;
   background-color: var(--one-title-color);
-}
 
+}
+.site-nav {
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+}
 .site-list {
   display: flex;
 }
@@ -12,6 +17,9 @@
 }
 .connect {
   margin-left: auto;
+  @media screen and (max-width:767px) {
+    display: none;
+  }
 }
 
 .logo_blac {
@@ -20,7 +28,12 @@
 
 
 .header__logo {
-  margin-right: 93px;
+  @media screen and (min-width:768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 .site-list__item:not(:last-child) {
   margin-right: 50px;
@@ -89,4 +102,24 @@
     fill: var(--accent-color);
     color: var(--accent-color);
   }
+}
+
+.mob-menu {
+  background-color: #fff;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: 1;
+  display: flex;
+}
+.mob-mune-open__btn {
+  margin-left: auto;
+}
+.mob-mune-close__btn {
+  position: absolute;
+  right: 0;
+  top: 0;;
+ 
 }

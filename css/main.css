@@ -88,13 +88,47 @@ img {
   }
 }
 
+.mob-container {
+  width: 100vw;
+  height: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mob-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mob-container {
+    width: 1200px;
+  }
+}
+
 .logo {
   font-family: 'Raleway';
+  font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .current {
@@ -159,6 +193,12 @@ img {
   background-color: var(--one-title-color);
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .site-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,12 +218,26 @@ img {
   margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .connect {
+    display: none;
+  }
+}
+
 .logo_blac {
   color: #212121;
 }
 
-.header__logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .site-list__item:not(:last-child) {
@@ -254,6 +308,29 @@ img {
 .header-social-icon:focus, .header-social-icon:hover {
   fill: var(--accent-color);
   color: var(--accent-color);
+}
+
+.mob-menu {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mob-mune-open__btn {
+  margin-left: auto;
+}
+
+.mob-mune-close__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .hero {
@@ -418,6 +495,12 @@ img {
 
 .work {
   padding-top: 0px;
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__title {
@@ -965,7 +1048,14 @@ address {
 }
 
 .card__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1011,7 +1101,9 @@ address {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
-  background-color: tomato;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card__text-to {
