@@ -5,15 +5,12 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 .logo_white {
   color: #f5f4fa;
 }
-// .footer-bg a {
-//   margin-bottom: 20px;
-// }
 
 .footer__pre-link {
 font-size: 14px;
@@ -44,7 +41,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 9px;
 }
 
-
+.footer__address {
+ 
+  margin-bottom: 60px;
+}
 address {
   font-style: normal;
   margin-top: 20px;
@@ -63,7 +63,8 @@ address {
 
 .footer__social {
   display: block;
-  margin-left: 70px;
+  // margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .join__list {
@@ -102,8 +103,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 
 .footer__subscribe {
-  margin-left: 93px;
-  
+  // margin-left: 93px;
+  // display: flex;
 }
 .footer__input {
   width: 358px;
@@ -116,6 +117,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 16px;
   outline: none;
   color: var(--one-title-color);
+  margin-bottom: 20px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   &:focus {
