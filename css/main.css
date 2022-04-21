@@ -894,6 +894,29 @@ img {
   padding-bottom: 60px;
 }
 
+.footer__container {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    text-align: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .logo_white {
   color: #f5f4fa;
 }
@@ -935,6 +958,18 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-left: 0px;
+  }
+}
+
 address {
   font-style: normal;
   margin-top: 20px;
@@ -953,6 +988,18 @@ address {
 .footer__social {
   display: block;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-left: 70px;
+  }
 }
 
 .join__list {
@@ -999,8 +1046,31 @@ address {
   fill: var(--one-title-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 166px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: 93px;
+    display: block;
+  }
+}
+
 .footer__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1016,6 +1086,18 @@ address {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 
 .footer__input:focus {
