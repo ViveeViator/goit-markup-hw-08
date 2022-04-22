@@ -51,10 +51,15 @@
 }
 
 .card__item {
-  margin-top: 30px;
+  @media screen and (max-width:767px) {
+    &+& {
+      margin-top: 30px;
+    }
+  }
   @media screen and (min-width:768px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-top: 30px;
   }
   @media screen and (min-width:1200px) {
     width: calc(100% / 3 - 30px);

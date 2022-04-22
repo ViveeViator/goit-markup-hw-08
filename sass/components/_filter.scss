@@ -6,13 +6,21 @@
     @media screen and (min-width:768px) {
       justify-content: center;
     }
-    & li:not(:last-child) {
-      margin-right: 8px;
-    }
   }
   .filter__item {
     margin-bottom: 15px;
+    margin-right: 8px;
+    &:nth-child(2n + 3) {
+    margin-right: 0;
   }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+
+
+  
+
   .filter__btn {
     font-family: inherit;
     font-weight: 500;
