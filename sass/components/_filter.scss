@@ -10,12 +10,15 @@
   .filter__item {
     margin-bottom: 15px;
     margin-right: 8px;
-    &:nth-child(2n + 3) {
-    margin-right: 0;
-  }
-    &:nth-child(n + 4) {
-      margin-bottom: 0;
-    }
+        @media screen and (min-width:480px) and (max-width:767px) {
+              &:nth-child(2n + 3) {
+                margin-right: 0;
+              }
+              &:nth-child(n + 4) {
+                margin-bottom: 0;
+              }
+        }
+
   }
 
 

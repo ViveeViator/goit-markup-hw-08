@@ -1170,12 +1170,13 @@ address {
   margin-right: 8px;
 }
 
-.filter__item:nth-child(2n + 3) {
-  margin-right: 0;
-}
-
-.filter__item:nth-child(n + 4) {
-  margin-bottom: 0;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .filter__item:nth-child(2n + 3) {
+    margin-right: 0;
+  }
+  .filter__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
 }
 
 .filter__btn {
