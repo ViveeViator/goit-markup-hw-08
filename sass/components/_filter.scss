@@ -9,9 +9,11 @@
   }
   .filter__item {
     margin-bottom: 15px;
-    margin-right: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
         @media screen and (min-width:480px) and (max-width:767px) {
-              &:nth-child(2n + 3) {
+              &:nth-child(3) {
                 margin-right: 0;
               }
               &:nth-child(n + 4) {

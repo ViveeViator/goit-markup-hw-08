@@ -1167,11 +1167,14 @@ address {
 
 .filter__item {
   margin-bottom: 15px;
+}
+
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .filter__item:nth-child(2n + 3) {
+  .filter__item:nth-child(3) {
     margin-right: 0;
   }
   .filter__item:nth-child(n + 4) {
