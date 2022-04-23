@@ -344,9 +344,8 @@ img {
 
 .mob-container {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   padding: 48px 40px;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
