@@ -1154,7 +1154,7 @@ address {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1162,23 +1162,39 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
-.filter__item {
-  margin-bottom: 15px;
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
+.filter__item:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
+  }
   .filter__item:nth-child(3) {
     margin-right: 0;
-  }
-  .filter__item:nth-child(n + 4) {
-    margin-bottom: 0;
   }
 }
 
